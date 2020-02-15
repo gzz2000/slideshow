@@ -1,0 +1,32 @@
+{
+    "name": "slideshow-server",
+    "version": "1.0.0",
+    "description": "Slideshow cross-client presentation server based on bespoke-sync",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "GZZ",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@marp-team/marp-core": "^1.0.1",
+        "@marp-team/marpit": "^1.5.0",
+        "bespoke-sync": "~0.2.1",
+        "chalk": "^3.0.0",
+        "cosmiconfig": "^6.0.0",
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "express-basic-auth": "^1.2.0",
+        "express-fileupload": "^1.1.6",
+        "file-url": "^3.0.0",
+        "get-stdin": "^7.0.0",
+        "globby": "^11.0.0",
+        "import-from": "^3.0.0",
+        "mkdirp": "^0.5.1",
+        "os-locale": "^4.0.0",
+        "pkg-up": "^3.1.0",
+        "rimraf": "^3.0.1",
+        "tmp": "^0.1.0",
+        "yargs": "^15.1.0"
+    }
+}

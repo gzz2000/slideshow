@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+	    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport" />
+        <title>Slides</title>
+        <style>
+         body {
+             padding: 5px 20px;
+         }
+        </style>
+    </head>
+    <body>
+        <h2>Slides</h2>
+        <ul>
+            <% for(const f of filelist) { %>
+                <li><%= f %>.md <a href="/slides/<%= f %>.html" target="_blank">View</a> <a href="/slides/<%= f %>.html?view=presenter" target="_blank">Presenter</a> <a href="/slides/<%= f %>.html?view=standalone" target="_blank">Standalone</a> <button onclick="location.replace('/del/<%= f %>');">Delete</button></li>
+            <% } %>
+        </ul>
+
+        <h3>Upload</h3>
+        <form enctype="multipart/form-data" method="post" action="/upload">
+            <input type="file" name="file" onchange="form.submit()" accept=".md" />
+        </form>
+        
+        <hr style="margin-top: 40px;" />
+        <p>Slideshow v1.0</p>
+        <p>Source code available on <a href="https://github.com/gzz2000/slideshow">github</a>.</p>
+    </body>
+</html>
